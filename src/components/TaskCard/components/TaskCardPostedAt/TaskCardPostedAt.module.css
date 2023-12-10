@@ -1,0 +1,8 @@
+.taskCardPostedAt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--navy-blue-lighter);
+}

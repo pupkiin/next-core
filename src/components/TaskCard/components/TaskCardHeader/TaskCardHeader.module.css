@@ -1,0 +1,11 @@
+.taskCardHeader {
+  width: fit-content;
+  font-size: 18px;
+  margin-bottom: 25px;
+  cursor: pointer;
+  transition: color .1s ease-in-out;
+}
+
+.taskCardHeader:hover {
+  color: var(--blue);
+}

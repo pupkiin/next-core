@@ -1,0 +1,13 @@
+.taskCardSeeMoreButton {
+  padding: 7px 14px;
+  border-radius: 12px;
+  color: var(--white);
+  background-color: var(--blue);
+  font-weight: 500;
+  font-size: 14px;
+  transition: background-color .1s ease-in-out;
+}
+
+.taskCardSeeMoreButton:hover {
+  background-color:  var(--blue-lighter);
+}

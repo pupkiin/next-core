@@ -1,0 +1,6 @@
+.headerFindTaskList {
+  position: absolute;
+  width: 500px;
+  /* left: -200px; */
+  background-color: var(--whitex);
+}

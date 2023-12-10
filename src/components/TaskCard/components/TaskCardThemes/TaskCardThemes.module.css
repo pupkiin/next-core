@@ -1,0 +1,17 @@
+.taskCardThemes {
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.taskCardThemesTitles {
+  padding: 7px 14px;
+  border-radius: 12px;
+  color: var(--navy-blue-darker);
+  font-weight: 500;
+  font-size: 13px;
+  background-color: var(--navy-blue-lightest);
+}
+
+.taskCardThemesTitles:not(:last-child) {
+  margin-right: 10px;
+}

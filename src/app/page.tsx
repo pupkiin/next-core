@@ -5,6 +5,9 @@ export default function Home() {
     <main>
       <div>Hello</div>
       <Link href='/tasks'>Tasks</Link>
+      <br />
+      <br />
+      <Link href='/profile'>Profile</Link>
     </main>
   )
 }

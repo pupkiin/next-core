@@ -44,11 +44,11 @@
   color-scheme: light dark;
 }
 
-/* @font-face {
+@font-face {
   font-family: 'Roboto';
   src: local('Roboto-Thin'),
-    url("./assets/fonts/Roboto-Thin.woff2") format("woff2"),
-    url("./assets/fonts/Roboto-Thin.woff") format("woff");
+    url("../assets/fonts/Roboto-Thin.woff2") format("woff2"),
+    url("../assets/fonts/Roboto-Thin.woff") format("woff");
   font-weight: 100;
   font-style: normal;
 }
@@ -56,8 +56,8 @@
 @font-face {
   font-family: 'Roboto';
   src: local('Roboto-Light'),
-    url("./assets/fonts/Roboto-Light.woff2") format("woff2"),
-    url("./assets/fonts/Roboto-Light.woff") format("woff");
+    url("../assets/fonts/Roboto-Light.woff2") format("woff2"),
+    url("../assets/fonts/Roboto-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
 }
@@ -65,8 +65,8 @@
 @font-face {
   font-family: 'Roboto';
   src: local('Roboto-Regular'),
-    url("./assets/fonts/Roboto-Regular.woff2") format("woff2"),
-    url("./assets/fonts/Roboto-Regular.woff") format("woff");
+    url("../assets/fonts/Roboto-Regular.woff2") format("woff2"),
+    url("../assets/fonts/Roboto-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
@@ -74,8 +74,8 @@
 @font-face {
   font-family: 'Roboto';
   src: local('Roboto-Medium'),
-    url("./assets/fonts/Roboto-Medium.woff2") format("woff2"),
-    url("./assets/fonts/Roboto-Medium.woff") format("woff");
+    url("../assets/fonts/Roboto-Medium.woff2") format("woff2"),
+    url("../assets/fonts/Roboto-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
 }
@@ -83,8 +83,8 @@
 @font-face {
   font-family: 'Roboto';
   src: local('Roboto-Bold'),
-    url("./assets/fonts/Roboto-Bold.woff2") format("woff2"),
-    url("./assets/fonts/Roboto-Bold.woff") format("woff");
+    url("../assets/fonts/Roboto-Bold.woff2") format("woff2"),
+    url("../assets/fonts/Roboto-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
@@ -92,11 +92,11 @@
 @font-face {
   font-family: 'Roboto';
   src: local('Roboto-Black'),
-    url("./assets/fonts/Roboto-Black.woff2") format("woff2"),
-    url("./assets/fonts/Roboto-Black.woff") format("woff");
+    url("../assets/fonts/Roboto-Black.woff2") format("woff2"),
+    url("../assets/fonts/Roboto-Black.woff") format("woff");
   font-weight: 900;
   font-style: normal;
-} */
+}
 
 html {
   box-sizing: border-box;

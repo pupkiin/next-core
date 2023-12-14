@@ -1,6 +1,7 @@
 import React from 'react';
 
 import styles from './HeaderLogo.module.css';
+import Link from 'next/link';
 
 export interface HeaderLogoProps {
   prop?: string;
@@ -8,8 +9,8 @@ export interface HeaderLogoProps {
 
 export function HeaderLogo({prop = 'default value'}: HeaderLogoProps) {
   return (
-    <li>
-      logo
+    <li className={styles.headerLogo}>
+      <Link className={styles.headerLogoLink} href="/">Master`s Guild</Link>
     </li>
   );
 }

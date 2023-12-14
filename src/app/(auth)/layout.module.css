@@ -1,0 +1,14 @@
+.layout {
+  display: flex;
+  justify-content: center;
+  padding: 70px;
+}
+
+.layout > * {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--gray-light);
+  box-shadow: var(--shadow-5);
+  border-radius: 24px;
+  background-color: var(--gray-lightest);
+}

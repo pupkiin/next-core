@@ -5,16 +5,9 @@
 .headerList {
   height: 72px;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
-  padding: 18px;
+  padding: 18px 50px;
   font-size: 14px;
   border-bottom: 1px solid var(--grayBorder);
-}
-
-.specialties {
-  padding: 10px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
 }

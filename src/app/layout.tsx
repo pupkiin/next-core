@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
-
+// import "./normalize.css";
 import './globals.css'
-import './normalize.css'
+import "./normalize.css";
 
 // const font = Roboto({
 //   weight: ["100", "300", "400", "500", "700", "900"],

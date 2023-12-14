@@ -134,6 +134,21 @@ button {
   font-size: inherit;
 }
 
+/* посмотреть как работает фокус в других браузерах */
+button:focus-visible {
+  outline: 3px solid var(--blue-lightest);
+}
+
+input:focus-visible {
+  outline: 3px solid var(--blue-lightest);
+}
+
+a:focus-visible {
+  outline: 3px solid var(--blue-lightest);
+  /* outline-offset: 4px; */
+  border-radius: 6px;
+}
+
 h1, h2, h3, h4, h5, h6, p {
   margin: 0;
 }

@@ -145,7 +145,6 @@ input:focus-visible {
 
 a:focus-visible {
   outline: 3px solid var(--blue-lightest);
-  /* outline-offset: 4px; */
   border-radius: 6px;
 }
 

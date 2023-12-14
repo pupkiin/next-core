@@ -15,7 +15,7 @@ export function Footer({ prop = "default value" }: FooterProps) {
           <li className={styles.footerListHeader}>Header LOgo</li>
           <li className={styles.footerListItem}>
             <div className={styles.footerMessagers}>
-              <Link href="#">
+              <Link className={styles.footerMessagersLink} href="#">
                 <svg
                   width="2em"
                   height="2em"
@@ -45,7 +45,7 @@ export function Footer({ prop = "default value" }: FooterProps) {
                   </defs>
                 </svg>
               </Link>
-              <Link href="#">
+              <Link className={styles.footerMessagersLink} href="#">
                 <svg
                   width="2em"
                   height="2em"
@@ -102,29 +102,43 @@ export function Footer({ prop = "default value" }: FooterProps) {
             </Link>
           </li>
           <li className={styles.footerListItem}>
-            <Link className={styles.footerListLink} href="#">Правила площадки</Link>
+            <Link className={styles.footerListLink} href="#">
+              Правила площадки
+            </Link>
           </li>
           <li className={styles.footerListItem}>
-            <Link className={styles.footerListLink} href="#">Пользовательское соглашение</Link>
+            <Link className={styles.footerListLink} href="#">
+              Пользовательское соглашение
+            </Link>
           </li>
           <li className={styles.footerListItem}>
-            <Link className={styles.footerListLink} href="#">Политика конфиденциальности</Link>
+            <Link className={styles.footerListLink} href="#">
+              Политика конфиденциальности
+            </Link>
           </li>
         </ul>
 
         <ul className={styles.footerList}>
           <li className={styles.footerListHeader}>Информация</li>
           <li className={styles.footerListItem}>
-            <Link className={styles.footerListLink} href="#">Служба поддержки</Link>
+            <Link className={styles.footerListLink} href="#">
+              Служба поддержки
+            </Link>
           </li>
           <li className={styles.footerListItem}>
-            <Link className={styles.footerListLink} href="#">Ваши вопросы</Link>
+            <Link className={styles.footerListLink} href="#">
+              Ваши вопросы
+            </Link>
           </li>
           <li className={styles.footerListItem}>
-            <Link className={styles.footerListLink} href="#">Клиентам</Link>
+            <Link className={styles.footerListLink} href="#">
+              Клиентам
+            </Link>
           </li>
           <li className={styles.footerListItem}>
-            <Link className={styles.footerListLink} href="#">Мастерам</Link>
+            <Link className={styles.footerListLink} href="#">
+              Мастерам
+            </Link>
           </li>
         </ul>
       </div>

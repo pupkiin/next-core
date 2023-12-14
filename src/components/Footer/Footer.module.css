@@ -4,16 +4,25 @@
 
 .footerBlock {
   display: flex;
-  /* align-items: center; */
   justify-content: space-around;
   padding: 40px;
   background-color: var(--gray-light);
   border-radius: 24px;
-  height: 300px;
 }
 
 .footerList {
-  
+  display: flex;
+  flex-direction: column;
+}
+
+.footerMessagersLink {
+  border-radius: 6px;
+  padding: 3px;
+  transition: background-color .1s ease-in-out;
+}
+
+.footerMessagersLink:hover {
+  background-color: var(--grayBorder);
 }
 
 .footerListHeader {

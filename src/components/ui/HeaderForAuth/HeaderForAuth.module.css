@@ -1,9 +1,10 @@
 .header {
   width: 100%;
+  box-shadow: var(--shadow-2);
 }
 
 .headerList {
-  height: 72px;
+  height: 70px;
   display: flex;
   justify-content: flex-start;
   align-items: center;

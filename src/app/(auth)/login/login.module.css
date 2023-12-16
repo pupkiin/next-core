@@ -3,7 +3,8 @@
 }
 
 .loginHeader {
-  font-weight: 500;
+  font-size: 28px;
+  /* font-weight: 500; */
   text-align: center;
   margin-bottom: 50px;
 }
@@ -35,6 +36,7 @@
 .loginButton {
   width: 100%;
   font-size: 15px;
+  font-weight: 500;
   padding: 10px 20px;
   margin-bottom: 40px;
   background-color: var(--blue);

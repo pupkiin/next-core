@@ -1,5 +1,5 @@
 import Link from "next/link";
-import styles from './asClient.module.css'
+import styles from './as.module.css'
 
 export default function signLayout(
   { children }: { children: React.ReactNode }

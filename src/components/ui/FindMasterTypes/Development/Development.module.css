@@ -1,14 +1,13 @@
 .developmentList {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  /* align-items: center; */
+  justify-content: space-evenly;
 }
 
 .developmentListItem {
   /* width: 33%; */
   width: 44%;
-  font-size: 16px;
+  font-size: 15px;
   padding: 5px 5px;
   margin-bottom: 16px;
   letter-spacing: 0.20px;

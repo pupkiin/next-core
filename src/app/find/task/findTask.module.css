@@ -8,14 +8,15 @@
 
 .findTaskTitle {
   display: flex;
-  font-size: 34px;
+  font-size: 30px;
   font-weight: 500;
   margin-bottom: 15px;
 }
 
 .findTaskDescription {
-  font-size: 16px;
+  font-size: 15px;
   margin-bottom: 100px;
+  letter-spacing: 0.20px;
 }
 
 .findTaskExploreBlock {
@@ -53,7 +54,7 @@
 }
 
 .radioType {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 500;
   margin-left: 15px;
   letter-spacing: 0.20px;

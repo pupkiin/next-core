@@ -3,7 +3,7 @@ import styles from './Development.module.css'
 
 export default function Development() {
   return (
-    <div className={styles.developmentBlock}>
+    <div key='1' className={styles.developmentBlock}>
       <ul className={styles.developmentList}>
         <li className={styles.developmentListItem}>
           <Link className={styles.developmentItemLink} href="/tasks">

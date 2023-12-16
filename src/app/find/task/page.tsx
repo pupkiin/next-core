@@ -1,7 +1,30 @@
+"use client";
 import Development from "@/components/ui/FindMasterTypes/Development/Develompent";
 import styles from "./findTask.module.css";
+import { useEffect, useState } from "react";
+import Footer from "@/components/ui/Footer/Footer";
+import { Header } from "@/components";
+import { DropdownHideButton } from "@/components/Dropdown/components";
 
-export default function findTask() {
+export default function FindTask() {
+  const LIST = [
+    { element: <Development /> },
+    { element: <Footer /> },
+    { element: <Header /> },
+    { element: <DropdownHideButton /> },
+    { element: <Development /> },
+    { element: <Development /> },
+    { element: <Development /> },
+    { element: <Development /> },
+    { element: <Development /> },
+  ];
+
+  const [state, setState] = useState(1);
+
+  useEffect(() => {
+    console.log(state);
+  }, [state]);
+
   return (
     <main className={styles.container}>
       <div className={styles.findTaskTitleBlock}>
@@ -37,6 +60,7 @@ export default function findTask() {
                   type="radio"
                   name="1"
                   className="radio focus:outline-3 focus:outline-indigo-300 checked:bg-indigo-500"
+                  onClick={() => setState(1)}
                   defaultChecked
                 />
                 <span className={styles.radioType}>Разработка и IT</span>
@@ -49,6 +73,7 @@ export default function findTask() {
                   type="radio"
                   name="1"
                   className="radio focus:outline-3 focus:outline-indigo-300 checked:bg-indigo-500"
+                  onClick={() => setState(2)}
                 />
                 <span className={styles.radioType}>Дизайн и творчество</span>
               </label>
@@ -60,6 +85,7 @@ export default function findTask() {
                   type="radio"
                   name="1"
                   className="radio focus:outline-3 focus:outline-indigo-300 checked:bg-indigo-500"
+                  onClick={() => setState(3)}
                 />
                 <span className={styles.radioType}>Продажи и маркетинг</span>
               </label>
@@ -71,10 +97,9 @@ export default function findTask() {
                   type="radio"
                   name="1"
                   className="radio focus:outline-3 focus:outline-indigo-300 checked:bg-indigo-500"
+                  onClick={() => setState(4)}
                 />
-                <span className={styles.radioType}>
-                  Администрирование
-                </span>
+                <span className={styles.radioType}>Администрирование</span>
               </label>
             </div>
 
@@ -84,6 +109,7 @@ export default function findTask() {
                   type="radio"
                   name="1"
                   className="radio focus:outline-3 focus:outline-indigo-300 checked:bg-indigo-500"
+                  onClick={() => setState(5)}
                 />
                 <span className={styles.radioType}>Тексты и переводы</span>
               </label>
@@ -95,6 +121,7 @@ export default function findTask() {
                   type="radio"
                   name="1"
                   className="radio focus:outline-3 focus:outline-indigo-300 checked:bg-indigo-500"
+                  onClick={() => setState(6)}
                 />
                 <span className={styles.radioType}>Финансы и учёт</span>
               </label>
@@ -106,6 +133,7 @@ export default function findTask() {
                   type="radio"
                   name="1"
                   className="radio focus:outline-3 focus:outline-indigo-300 checked:bg-indigo-500"
+                  onClick={() => setState(7)}
                 />
                 <span className={styles.radioType}>HR и обучение</span>
               </label>
@@ -117,6 +145,7 @@ export default function findTask() {
                   type="radio"
                   name="1"
                   className="radio focus:outline-3 focus:outline-indigo-300 checked:bg-indigo-500"
+                  onClick={() => setState(8)}
                 />
                 <span className={styles.radioType}>
                   Архетектура и инженерия
@@ -130,6 +159,7 @@ export default function findTask() {
                   type="radio"
                   name="1"
                   className="radio focus:outline-3 focus:outline-indigo-300 checked:bg-indigo-500"
+                  onClick={() => setState(9)}
                 />
                 <span className={styles.radioType}>Образование</span>
               </label>
@@ -140,7 +170,7 @@ export default function findTask() {
               Найдите интересующую специальность
             </h2>
 
-            <Development />
+            {LIST[state - 1].element}
           </div>
         </div>
       </div>

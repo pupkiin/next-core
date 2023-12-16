@@ -1,0 +1,63 @@
+.container {
+  padding: 70px;
+}
+
+.findTaskTitleImg {
+  margin-right: 15px;
+}
+
+.findTaskTitle {
+  display: flex;
+  font-size: 34px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.findTaskDescription {
+  font-size: 16px;
+  margin-bottom: 100px;
+}
+
+.findTaskExploreBlock {
+  display: flex;
+}
+
+.findTaskTypes {
+  width: 25%;
+  padding: 0 40px 0px 0;
+  border-right: 1px solid var(--grayBorder);
+}
+
+.findTaskTaskTopics {
+  width: 75%;
+  padding: 0 0 0 40px;
+}
+
+.findTaskExploreBlockTitle {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  letter-spacing: 0.20px;
+}
+
+.radioControl {
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.radioLabel {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.radioType {
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 15px;
+  letter-spacing: 0.20px;
+}
+
+
+

@@ -1,0 +1,28 @@
+.developmentList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+
+.developmentListItem {
+  width: 33%;
+  font-size: 16px;
+  padding: 5px 20px;
+  margin-bottom: 16px;
+  letter-spacing: 0.20px;
+  line-height: 20px;
+  transition: color .1s ease-in-out;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--gray-text);
+}
+
+.developmentListItem:hover {
+  color: var(--blue);
+}
+
+.developmentItemLink {
+  text-overflow: ellipsis;
+}

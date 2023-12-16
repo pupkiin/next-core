@@ -1,6 +1,7 @@
 import React from 'react';
 
 import styles from './HeaderFindMaster.module.css';
+import Link from 'next/link';
 
 export interface HeaderFindMasterProps {
   prop?: string;
@@ -9,9 +10,9 @@ export interface HeaderFindMasterProps {
 export function HeaderFindMaster({prop = 'default value'}: HeaderFindMasterProps) {
   return (
     <li className={styles.headerFindMaster}>
-      <button className={styles.headerFindMaterButton}>
+      <Link className={styles.headerFindMaterButton} href="/find/master">
         Find Master
-      </button>
+      </Link>
     </li>
   );
 }

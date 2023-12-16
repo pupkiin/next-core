@@ -1,4 +1,5 @@
-import { Footer, Header } from "@/components";
+import { Header } from "@/components";
+import Footer from "@/components/ui/Footer/Footer";
 
 export default function ProfileLayout({
   children,

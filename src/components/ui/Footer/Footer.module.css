@@ -1,0 +1,37 @@
+.footer {
+  padding: 20px 50px 0 50px;
+}
+
+.footerBlock {
+  /* padding: 40px; */
+  background-color: var(--gray-light);
+  border-radius: 24px;
+}
+
+.footerList {
+  height: 70px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footerListItem {
+  font-weight: 500;
+  padding: 3px;
+  transition: color 0.1s ease-in-out;
+}
+
+.footerListItem:hover {
+  color: var(--blue);
+}
+
+.footerItemLink {
+  display: flex;
+  align-items: center;
+}
+
+.footerItemLinkText {
+  margin-left: 3px;
+}
+
+

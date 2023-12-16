@@ -1,6 +1,6 @@
 import Development from "@/components/ui/FindMasterTypes/Development/Develompent";
 import styles from "./findTask.module.css";
- 
+
 export default function findTask() {
   return (
     <main className={styles.container}>
@@ -73,7 +73,7 @@ export default function findTask() {
                   className="radio focus:outline-3 focus:outline-indigo-300 checked:bg-indigo-500"
                 />
                 <span className={styles.radioType}>
-                  Администрирование и поддежка клиентов
+                  Администрирование
                 </span>
               </label>
             </div>
@@ -131,21 +131,16 @@ export default function findTask() {
                   name="1"
                   className="radio focus:outline-3 focus:outline-indigo-300 checked:bg-indigo-500"
                 />
-                <span className={styles.radioType}>
-                  Образование
-                </span>
+                <span className={styles.radioType}>Образование</span>
               </label>
             </div>
-
-
           </div>
           <div className={styles.findTaskTaskTopics}>
             <h2 className={styles.findTaskExploreBlockTitle}>
               Найдите интересующую специальность
             </h2>
-            
-            <Development />
 
+            <Development />
           </div>
         </div>
       </div>

@@ -190,7 +190,11 @@ export default function Development() {
             Java Разработчик
           </Link>
         </li>
-        
+        <li className={styles.developmentListItem}>
+          <Link className={styles.developmentItemLink} href="/tasks">
+            Web Разработчик
+          </Link>
+        </li>
       </ul>
     </div>
   ); 

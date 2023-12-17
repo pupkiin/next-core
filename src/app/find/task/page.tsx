@@ -1,29 +1,26 @@
 "use client";
 import Development from "@/components/ui/FindMasterTypes/Development/Develompent";
 import styles from "./findTask.module.css";
-import { useEffect, useState } from "react";
-import Footer from "@/components/ui/Footer/Footer";
-import { Header } from "@/components";
-import { DropdownHideButton } from "@/components/Dropdown/components";
+import { useState } from "react";
+import Design from "@/components/ui/FindMasterTypes/Design/Design";
+import Marketing from "@/components/ui/FindMasterTypes/Marketing/Marketing";
+import Translate from "@/components/ui/FindMasterTypes/Translate/Translate";
+import Finance from "@/components/ui/FindMasterTypes/Finance/Finance";
+import Engineering from "@/components/ui/FindMasterTypes/Engineering/Engineering";
+import Education from "@/components/ui/FindMasterTypes/Education/Education";
 
 export default function FindTask() {
   const LIST = [
     { element: <Development /> },
-    { element: <Footer /> },
-    { element: <Header /> },
-    { element: <DropdownHideButton /> },
-    { element: <Development /> },
-    { element: <Development /> },
-    { element: <Development /> },
-    { element: <Development /> },
-    { element: <Development /> },
+    { element: <Design /> },
+    { element: <Marketing /> },
+    { element: <Translate /> },
+    { element: <Finance /> },
+    { element: <Engineering /> },
+    { element: <Education /> },
   ];
 
   const [state, setState] = useState(1);
-
-  useEffect(() => {
-    console.log(state);
-  }, [state]);
 
   return (
     <main className={styles.container}>
@@ -51,7 +48,7 @@ export default function FindTask() {
         <div className={styles.findTaskExploreBlock}>
           <div className={styles.findTaskTypes}>
             <h2 className={styles.findTaskExploreBlockTitle}>
-              Выберите направление
+              Направления
             </h2>
 
             <div className={styles.radioControl}>
@@ -75,7 +72,7 @@ export default function FindTask() {
                   className="radio focus:outline-3 focus:outline-indigo-300 checked:bg-indigo-500"
                   onClick={() => setState(2)}
                 />
-                <span className={styles.radioType}>Дизайн и творчество</span>
+                <span className={styles.radioType}>Дизайн и Творчество</span>
               </label>
             </div>
 
@@ -87,7 +84,7 @@ export default function FindTask() {
                   className="radio focus:outline-3 focus:outline-indigo-300 checked:bg-indigo-500"
                   onClick={() => setState(3)}
                 />
-                <span className={styles.radioType}>Продажи и маркетинг</span>
+                <span className={styles.radioType}>Соцсети и Продажи</span>
               </label>
             </div>
 
@@ -99,7 +96,7 @@ export default function FindTask() {
                   className="radio focus:outline-3 focus:outline-indigo-300 checked:bg-indigo-500"
                   onClick={() => setState(4)}
                 />
-                <span className={styles.radioType}>Администрирование</span>
+                <span className={styles.radioType}>Тексты и Переводы</span>
               </label>
             </div>
 
@@ -111,7 +108,7 @@ export default function FindTask() {
                   className="radio focus:outline-3 focus:outline-indigo-300 checked:bg-indigo-500"
                   onClick={() => setState(5)}
                 />
-                <span className={styles.radioType}>Тексты и переводы</span>
+                <span className={styles.radioType}>Бизнес и Финансы</span>
               </label>
             </div>
 
@@ -122,30 +119,6 @@ export default function FindTask() {
                   name="1"
                   className="radio focus:outline-3 focus:outline-indigo-300 checked:bg-indigo-500"
                   onClick={() => setState(6)}
-                />
-                <span className={styles.radioType}>Финансы и учёт</span>
-              </label>
-            </div>
-
-            <div className={styles.radioControl}>
-              <label className={styles.radioLabel}>
-                <input
-                  type="radio"
-                  name="1"
-                  className="radio focus:outline-3 focus:outline-indigo-300 checked:bg-indigo-500"
-                  onClick={() => setState(7)}
-                />
-                <span className={styles.radioType}>HR и обучение</span>
-              </label>
-            </div>
-
-            <div className={styles.radioControl}>
-              <label className={styles.radioLabel}>
-                <input
-                  type="radio"
-                  name="1"
-                  className="radio focus:outline-3 focus:outline-indigo-300 checked:bg-indigo-500"
-                  onClick={() => setState(8)}
                 />
                 <span className={styles.radioType}>
                   Архетектура и инженерия
@@ -159,7 +132,7 @@ export default function FindTask() {
                   type="radio"
                   name="1"
                   className="radio focus:outline-3 focus:outline-indigo-300 checked:bg-indigo-500"
-                  onClick={() => setState(9)}
+                  onClick={() => setState(7)}
                 />
                 <span className={styles.radioType}>Образование</span>
               </label>
@@ -167,7 +140,7 @@ export default function FindTask() {
           </div>
           <div className={styles.findTaskTaskTopics}>
             <h2 className={styles.findTaskExploreBlockTitle}>
-              Найдите интересующую специальность
+              Выберите интересующую специальность
             </h2>
 
             {LIST[state - 1].element}

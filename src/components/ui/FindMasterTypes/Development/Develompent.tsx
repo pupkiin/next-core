@@ -2,200 +2,61 @@ import Link from 'next/link';
 import styles from './Development.module.css'
 
 export default function Development() {
+  const DEV_LIST = [
+    { topic: "IOS Разработка" },
+    { topic: "Android Разработка" },
+    { topic: "1С Специалист" },
+    { topic: "Разработка API" },
+    { topic: "Разработка Ботов" },
+    { topic: "Разработка Игр" },
+    { topic: "C++ Разработка" },
+    { topic: "CRM Специалист" },
+    { topic: "Инженер Компьютерного Зрения и Искуственного Интелекта" },
+    { topic: "C# Разработка" },
+    { topic: "Разработка Контроллеров" },
+    { topic: "Специалист по Глубокому Обучению" },
+    { topic: "Django Разработка" },
+    { topic: "Аналитика Данных" },
+    { topic: "Figma Дизайнер" },
+    { topic: "Front-End Разработка" },
+    { topic: "Back-End Разработка" },
+    { topic: "Верстка" },
+    { topic: "Flutter Разработка" },
+    { topic: "Google Разработка" },
+    { topic: "Java Script Разработка" },
+    { topic: "Linux Разработка" },
+    { topic: "Мобильная Разработка" },
+    { topic: "MS Office 365 Специалист" },
+    { topic: "Excel Специалист" },
+    { topic: "Разработка Баз Данных" },
+    { topic: "Python Разработка" },
+    { topic: "PHP Разработка" },
+    { topic: "Разработка Консольных Приложений" },
+    { topic: "React Разработка" },
+    { topic: "React Native Разработка" },
+    { topic: "SSL Специалист" },
+    { topic: "Unity Разработка" },
+    { topic: "Vue Разработка" },
+    { topic: "Angular Разработка" },
+    { topic: "WordPress Разработка" },
+    { topic: "Web Дизайнер" },
+    { topic: "Web Разработка" },
+    { topic: "Java Разработка" },
+    { topic: "Тестирование" },
+    { topic: "Хостинг" },
+  ];
+
   return (
-    <div key='1' className={styles.developmentBlock}>
+    <div className={styles.developmentBlock}>
       <ul className={styles.developmentList}>
-        <li className={styles.developmentListItem}>
-          <Link className={styles.developmentItemLink} href="/tasks">
-            IOS Разработчик
-          </Link>
-        </li>
-        <li className={styles.developmentListItem}>
-          <Link className={styles.developmentItemLink} href="/tasks">
-            Android Разработчик
-          </Link>
-        </li>
-        <li className={styles.developmentListItem}>
-          <Link className={styles.developmentItemLink} href="/tasks">
-            Разработчик API
-          </Link>
-        </li>
-        <li className={styles.developmentListItem}>
-          <Link className={styles.developmentItemLink} href="/tasks">
-            Разработчик ботов
-          </Link>
-        </li>
-        <li className={styles.developmentListItem}>
-          <Link className={styles.developmentItemLink} href="/tasks">
-            Разработчик Игр
-          </Link>
-        </li>
-        <li className={styles.developmentListItem}>
-          <Link className={styles.developmentItemLink} href="/tasks">
-            C++ Разработчик
-          </Link>
-        </li>
-        <li className={styles.developmentListItem}>
-          <Link className={styles.developmentItemLink} href="/tasks">
-            CRM специалист
-          </Link>
-        </li>
-        <li className={styles.developmentListItem}>
-          <Link className={styles.developmentItemLink} href="/tasks">
-            Инженер компьютерного зрения и искуственного интелекта
-          </Link>
-        </li>
-        <li className={styles.developmentListItem}>
-          <Link className={styles.developmentItemLink} href="/tasks">
-            C# Разработчик
-          </Link>
-        </li>
-        <li className={styles.developmentListItem}>
-          <Link className={styles.developmentItemLink} href="/tasks">
-            Разработчик контроллеров
-          </Link>
-        </li>
-        <li className={styles.developmentListItem}>
-          <Link className={styles.developmentItemLink} href="/tasks">
-            Специалист по глубокому обучению
-          </Link>
-        </li>
-        <li className={styles.developmentListItem}>
-          <Link className={styles.developmentItemLink} href="/tasks">
-            Django Разработчик
-          </Link>
-        </li>
-        <li className={styles.developmentListItem}>
-          <Link className={styles.developmentItemLink} href="/tasks">
-            Аналитик Данных
-          </Link>
-        </li>
-        <li className={styles.developmentListItem}>
-          <Link className={styles.developmentItemLink} href="/tasks">
-            Figma специалист
-          </Link>
-        </li>
-        <li className={styles.developmentListItem}>
-          <Link className={styles.developmentItemLink} href="/tasks">
-            Front-End Разработчик
-          </Link>
-        </li>
-        <li className={styles.developmentListItem}>
-          <Link className={styles.developmentItemLink} href="/tasks">
-            Back-End Разрабочик
-          </Link>
-        </li>
-        <li className={styles.developmentListItem}>
-          <Link className={styles.developmentItemLink} href="/tasks">
-            Верстальщик
-          </Link>
-        </li>
-        <li className={styles.developmentListItem}>
-          <Link className={styles.developmentItemLink} href="/tasks">
-            Flutter Разработчик
-          </Link>
-        </li>
-        <li className={styles.developmentListItem}>
-          <Link className={styles.developmentItemLink} href="/tasks">
-            Google Разработчик
-          </Link>
-        </li>
-        <li className={styles.developmentListItem}>
-          <Link className={styles.developmentItemLink} href="/tasks">
-            Java Script Разработчик
-          </Link>
-        </li>
-        <li className={styles.developmentListItem}>
-          <Link className={styles.developmentItemLink} href="/tasks">
-            Linux Разработчик
-          </Link>
-        </li>
-        <li className={styles.developmentListItem}>
-          <Link className={styles.developmentItemLink} href="/tasks">
-            Мобильная разработка
-          </Link>
-        </li>
-        <li className={styles.developmentListItem}>
-          <Link className={styles.developmentItemLink} href="/tasks">
-            MS Office 365 Специалист
-          </Link>
-        </li>
-        <li className={styles.developmentListItem}>
-          <Link className={styles.developmentItemLink} href="/tasks">
-            Excel Специалист
-          </Link>
-        </li>
-        <li className={styles.developmentListItem}>
-          <Link className={styles.developmentItemLink} href="/tasks">
-            Разработчик баз данных
-          </Link>
-        </li>
-        <li className={styles.developmentListItem}>
-          <Link className={styles.developmentItemLink} href="/tasks">
-            Python Разработчик
-          </Link>
-        </li>
-        <li className={styles.developmentListItem}>
-          <Link className={styles.developmentItemLink} href="/tasks">
-            PHP Разработчик
-          </Link>
-        </li>
-        <li className={styles.developmentListItem}>
-          <Link className={styles.developmentItemLink} href="/tasks">
-            Разработчик Консольных приложений
-          </Link>
-        </li>
-        <li className={styles.developmentListItem}>
-          <Link className={styles.developmentItemLink} href="/tasks">
-            React Разработчик
-          </Link>
-        </li>
-        <li className={styles.developmentListItem}>
-          <Link className={styles.developmentItemLink} href="/tasks">
-            React Native Разработчик
-          </Link>
-        </li>
-        <li className={styles.developmentListItem}>
-          <Link className={styles.developmentItemLink} href="/tasks">
-            SSL Специалист
-          </Link>
-        </li>
-        <li className={styles.developmentListItem}>
-          <Link className={styles.developmentItemLink} href="/tasks">
-            Unity Разработчик
-          </Link>
-        </li>
-        <li className={styles.developmentListItem}>
-          <Link className={styles.developmentItemLink} href="/tasks">
-            Vue Разработчик
-          </Link>
-        </li>
-        <li className={styles.developmentListItem}>
-          <Link className={styles.developmentItemLink} href="/tasks">
-            Angular Разработчик
-          </Link>
-        </li>
-        <li className={styles.developmentListItem}>
-          <Link className={styles.developmentItemLink} href="/tasks">
-            WordPress Разработчик
-          </Link>
-        </li>
-        <li className={styles.developmentListItem}>
-          <Link className={styles.developmentItemLink} href="/tasks">
-            Web Дизайнер
-          </Link>
-        </li>
-        <li className={styles.developmentListItem}>
-          <Link className={styles.developmentItemLink} href="/tasks">
-            Java Разработчик
-          </Link>
-        </li>
-        <li className={styles.developmentListItem}>
-          <Link className={styles.developmentItemLink} href="/tasks">
-            Web Разработчик
-          </Link>
-        </li>
+        {DEV_LIST.map(({ topic }) => (
+          <li key={topic} className={styles.developmentListItem}>
+            <Link className={styles.developmentItemLink} href="/tasks">
+              {topic}
+            </Link>
+          </li>
+        ))}
       </ul>
     </div>
-  ); 
+  );
 }

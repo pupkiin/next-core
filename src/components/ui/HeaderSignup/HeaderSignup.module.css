@@ -1,0 +1,16 @@
+.headerSignUp {
+  
+}
+
+.headerSignUpButton {
+  padding: 10px 20px;
+  border-radius: 12px;
+  color: var(--white);
+  background-color: var(--blue);
+  font-weight: 500;
+  transition: background-color .1s ease-in-out;
+}
+
+.headerSignUpButton:hover {
+  background-color:  var(--blue-lighter);
+}

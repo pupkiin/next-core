@@ -12,6 +12,10 @@
   border-bottom: 1px solid var(--grayBorder);
 }
 
+.headerAuthorizationButtons {
+  display: flex;
+}
+
 .specialties {
   padding: 13px;
   display: flex;

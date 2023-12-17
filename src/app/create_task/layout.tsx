@@ -1,7 +1,7 @@
 import Footer from "@/components/ui/Footer/Footer";
 import Header from "@/components/ui/Header/Header";
 
-export default function ProfileLayout({
+export default function CreateTaskLayout({
   children,
 }: {
   children: React.ReactNode;

@@ -1,0 +1,16 @@
+.headerLogin {
+  
+}
+
+.headerLoginButton {
+  border-radius: 12px;
+  padding: 10px 20px;
+  margin-right: 10px;
+  font-weight: 500;
+  transition: color .1s ease-in-out, background-color .1s ease-in-out;
+}
+
+.headerLoginButton:hover {
+  color: var(--blue);
+  background-color: var(--gray-lightest);
+}

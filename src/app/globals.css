@@ -143,6 +143,14 @@ input:focus-visible {
   outline: 3px solid var(--blue-lightest);
 }
 
+textarea:focus-visible {
+  outline: 3px solid var(--blue-lightest);
+}
+
+select:focus-visible {
+  outline: 3px solid var(--blue-lightest);
+}
+
 a:focus-visible {
   outline: 3px solid var(--blue-lightest);
   border-radius: 6px;

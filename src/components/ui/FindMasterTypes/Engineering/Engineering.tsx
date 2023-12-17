@@ -1,19 +1,19 @@
 import Link from "next/link";
 import styles from "./Engineering.module.css"
 
-export default function Engineering() {
-  const ENGINEERING_LIST = [
-    { topic: "3D Визуализация" },
-    { topic: "Проектирование" },
-    { topic: "AutoCAD Разработка" },
-    { topic: "Архитектурный Дизайн" },
-    { topic: "Проектирование схем" },
-    { topic: "SolidWorks Дизайн" },
-    { topic: "MATLAB Разработка" },
-    { topic: "Специалист по Электронике" },
-    { topic: "Создание Скетчей" },
-  ];
+export const ENGINEERING_LIST = [
+  { topic: "3D Визуализация" },
+  { topic: "Проектирование" },
+  { topic: "AutoCAD Разработка" },
+  { topic: "Архитектурный Дизайн" },
+  { topic: "Проектирование схем" },
+  { topic: "SolidWorks Дизайн" },
+  { topic: "MATLAB Разработка" },
+  { topic: "Специалист по Электронике" },
+  { topic: "Создание Скетчей" },
+];
 
+export default function Engineering() {
   return (
     <div className={styles.engineeringBlock}>
       <ul className={styles.engineeringList}>

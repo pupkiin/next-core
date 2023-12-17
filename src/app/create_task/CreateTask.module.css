@@ -1,0 +1,78 @@
+.container {
+  width: 70%;
+  padding: 70px;
+  margin: 0 auto;
+}
+
+.createTaskTitle {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.createTaskDescription {
+  margin-bottom: 70px;
+}
+
+.createTaskForm {
+  background-color: var(--gray-lightest);
+  border-radius: 24px;
+  padding: 70px;
+  box-shadow: var(--shadow-3);
+}
+
+.createTaskInputBlock {
+  margin-bottom: 20px;
+}
+
+.createTaskInputLabel {
+  display: flex;
+  flex-direction: column;
+}
+
+.createTaskInputText {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.createTaskInputSvg {
+  margin-right: 5px;
+}
+
+.createTaskInput {
+  font-size: 15px;
+  border-radius: 12px;
+  width: 100%;
+  padding: 10px 18px;
+  letter-spacing: 0.20px;
+}
+
+.createTaskTextarea {
+  font-size: 15px;
+  border-radius: 12px;
+  width: 100%;
+  padding: 10px 18px;
+  min-height: 190px;
+  letter-spacing: 0.20px;
+}
+
+.createTaskInputFileLabel {
+	position: relative;
+	display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.createTaskInputFileText {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+}
+
+.createTaskInputSelect {
+  padding: 9px 18px;
+  font-size: 14px;
+  line-height: normal;
+  border-radius: 12px;
+}

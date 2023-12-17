@@ -1,0 +1,30 @@
+.createTaskSelectBlock {
+
+}
+
+.createTaskInputBlock {
+  margin-bottom: 20px;
+}
+
+.createTaskInputLabel {
+  display: flex;
+  flex-direction: column;
+}
+
+.createTaskInputText {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.createTaskInputSvg {
+  margin-right: 5px;
+}
+
+.createTaskInputSelect {
+  padding: 9px 18px;
+  font-size: 14px;
+  line-height: normal;
+  border-radius: 12px;
+}

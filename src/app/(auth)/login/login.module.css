@@ -22,10 +22,6 @@
   flex-direction: column;
 }
 
-.loginInputTitle {
-  margin-bottom: 5px;
-}
-
 .loginInput {
   font-size: 15px;
   border-radius: 12px;

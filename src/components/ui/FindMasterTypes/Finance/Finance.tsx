@@ -25,7 +25,7 @@ export default function Finance() {
       <ul className={styles.financeList}>
         {FINANCE_LIST.map(({ topic }) => (
           <li key={topic} className={styles.financeListItem}>
-            <Link className={styles.financeItemLink} href="/tasks">
+            <Link className={styles.financeItemLink} href="/find_task/tasks">
               {topic}
             </Link>
           </li>

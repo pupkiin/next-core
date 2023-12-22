@@ -17,7 +17,7 @@ export default function Education() {
       <ul className={styles.educationList}>
         {EDUCATION_LIST.map(({ topic }) => (
           <li key={topic} className={styles.educationListItem}>
-            <Link className={styles.educationItemLink} href="/tasks">
+            <Link className={styles.educationItemLink} href="/find_task/tasks">
               {topic}
             </Link>
           </li>

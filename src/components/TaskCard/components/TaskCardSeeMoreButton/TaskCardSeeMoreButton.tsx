@@ -1,6 +1,7 @@
 import React from 'react';
 
 import styles from './TaskCardSeeMoreButton.module.css';
+import Link from 'next/link';
 
 export interface TaskCardSeeMoreButtonProps {
   prop?: string;
@@ -8,8 +9,8 @@ export interface TaskCardSeeMoreButtonProps {
 
 export function TaskCardSeeMoreButton({prop = 'default value'}: TaskCardSeeMoreButtonProps) {
   return (
-    <button className={styles.taskCardSeeMoreButton}>
+    <Link className={styles.taskCardSeeMoreButton} href="/find_task/tasks/task">
       More Details
-    </button>
+    </Link>
   );
 }

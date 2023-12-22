@@ -24,7 +24,8 @@
 
 .createTaskInputSelect {
   padding: 9px 18px;
-  font-size: 14px;
+  font-size: 15px;
   line-height: normal;
+  width: 50%;
   border-radius: 12px;
 }

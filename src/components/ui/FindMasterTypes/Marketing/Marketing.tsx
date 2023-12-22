@@ -28,7 +28,7 @@ export default function Marketing() {
       <ul className={styles.marketingList}>
         {MARKETING_LIST.map(({ topic }) => (
           <li key={topic} className={styles.marketingListItem}>
-            <Link className={styles.marketingItemLink} href="/tasks">
+            <Link className={styles.marketingItemLink} href="/find_task/tasks">
               {topic}
             </Link>
           </li>

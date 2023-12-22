@@ -52,7 +52,10 @@ export default function Development() {
       <ul className={styles.developmentList}>
         {DEV_LIST.map(({ topic }) => (
           <li key={topic} className={styles.developmentListItem}>
-            <Link className={styles.developmentItemLink} href="/tasks">
+            <Link
+              className={styles.developmentItemLink}
+              href="/find_task/tasks"
+            >
               {topic}
             </Link>
           </li>

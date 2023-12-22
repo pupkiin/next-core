@@ -15,6 +15,7 @@
   --gap: 20px;
 
   --gray:                  #858484;
+  --semi-gray:             #9b9e9fea;
   --gray-light:            #ededed;
   --gray-lightest:         #f5f5f5;
   --grayBorder:            rgba(60, 60, 67, .20);
@@ -100,6 +101,7 @@
 
 html {
   box-sizing: border-box;
+  font-size: 14px;
 }
 
 *,
@@ -113,7 +115,7 @@ body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
-  font-size: 14px;
+  font-size: inherit;
 }
 
 ul {
@@ -159,6 +161,23 @@ a:focus-visible {
 h1, h2, h3, h4, h5, h6, p {
   margin: 0;
 }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input::placeholder {
+  color: var(--semi-gray);
+}
+
+textarea::placeholder {
+  color: var(--semi-gray);
+}
+
+
 
 
 

@@ -25,7 +25,7 @@ export default function Translate() {
       <ul className={styles.translateList}>
         {TRANSLATE_LIST.map(({ topic }) => (
           <li key={topic} className={styles.translateListItem}>
-            <Link className={styles.translateItemLink} href="/tasks">
+            <Link className={styles.translateItemLink} href="/find_task/tasks">
               {topic}
             </Link>
           </li>

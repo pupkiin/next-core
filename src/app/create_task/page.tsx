@@ -107,29 +107,66 @@ export default function CreateTask() {
           </div>
 
           {type !== "" && <Select type={type} />}
+        </div>
 
-          {/* {type !== "" && (
-            <div className={styles.createTaskInputBlock}>
-              <select
-                onChange={findOption}
-                className={styles.createTaskInputSelect}
-                name="pets"
-                id="work-type"
-                defaultValue={"DEFAULT"}
+        <div className={styles.createTaskInputBlock}>
+          <label className={styles.createTaskInputLabel} htmlFor="master-lvl">
+            <span className={styles.createTaskInputText}>
+              <svg
+                className={styles.createTaskInputSvg}
+                fill="currentColor"
+                viewBox="0 0 16 16"
+                height="1em"
+                width="1em"
               >
-                <option value="DEFAULT" disabled>
-                  Выберите направление
-                </option>
-                <option value="dev">Разработка и IT</option>
-                <option value="design">Дизайн и Творчество</option>
-                <option value="marketing">Соцсети и Продажи</option>
-                <option value="translate">Тексты и Переводы</option>
-                <option value="finance">Бизнес и Финансы</option>
-                <option value="engineering">Архитектура и Инженерия</option>
-                <option value="education">Образование</option>
-              </select>
-            </div>
-          )} */}
+                <path d="M4 11H2v3h2v-3zm5-4H7v7h2V7zm5-5v12h-2V2h2zm-2-1a1 1 0 00-1 1v12a1 1 0 001 1h2a1 1 0 001-1V2a1 1 0 00-1-1h-2zM6 7a1 1 0 011-1h2a1 1 0 011 1v7a1 1 0 01-1 1H7a1 1 0 01-1-1V7zm-5 4a1 1 0 011-1h2a1 1 0 011 1v3a1 1 0 01-1 1H2a1 1 0 01-1-1v-3z" />
+              </svg>
+              Уровень мастера
+            </span>
+          </label>
+
+          <select
+            className={styles.createTaskInputSelect}
+            name="master-lvl"
+            id="master-lvl"
+            defaultValue={"DEFAULT"}
+          >
+            <option value="DEFAULT" disabled>
+              Выберите уровень навыков
+            </option>
+            <option value="junior">Junior</option>
+            <option value="middle">Middle</option>
+            <option value="senior">Senior</option>
+          </select>
+        </div>
+
+        <div className={styles.createTaskInputBlock}>
+          <label className={styles.createTaskInputLabel}>
+            <span className={styles.createTaskInputText}>
+              <svg
+                className={styles.createTaskInputSvg}
+                fill="currentColor"
+                viewBox="0 0 16 16"
+                height="1em"
+                width="1em"
+              >
+                <path d="M5.5 9.511c.076.954.83 1.697 2.182 1.785V12h.6v-.709c1.4-.098 2.218-.846 2.218-1.932 0-.987-.626-1.496-1.745-1.76l-.473-.112V5.57c.6.068.982.396 1.074.85h1.052c-.076-.919-.864-1.638-2.126-1.716V4h-.6v.719c-1.195.117-2.01.836-2.01 1.853 0 .9.606 1.472 1.613 1.707l.397.098v2.034c-.615-.093-1.022-.43-1.114-.9H5.5zm2.177-2.166c-.59-.137-.91-.416-.91-.836 0-.47.345-.822.915-.925v1.76h-.005zm.692 1.193c.717.166 1.048.435 1.048.91 0 .542-.412.914-1.135.982V8.518l.087.02z" />
+                <path d="M8 15A7 7 0 118 1a7 7 0 010 14zm0 1A8 8 0 108 0a8 8 0 000 16z" />
+                <path d="M8 13.5a5.5 5.5 0 110-11 5.5 5.5 0 010 11zm0 .5A6 6 0 108 2a6 6 0 000 12z" />
+              </svg>
+              Установите цену
+            </span>
+            <input
+              className={styles.createTaskCostInput}
+              type="number"
+              name="text"
+              placeholder="Сколько вы заплатите за работу"
+            />
+          </label>
+        </div>
+
+        <div className={styles.createTaskButtonBlock}>
+          <button className={styles.createTaskButton}>Подтвердить</button>
         </div>
       </div>
     </div>

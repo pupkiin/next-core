@@ -22,3 +22,8 @@
   justify-content: space-around;
   align-items: center;
 }
+
+.headerProfileButtons {
+  display: flex;
+  align-items: center;
+}

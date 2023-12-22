@@ -44,7 +44,7 @@ export default function Design() {
       <ul className={styles.designList}>
         {DESIGN_LIST.map(({ topic }) => (
           <li key={topic} className={styles.designListItem}>
-            <Link className={styles.designItemLink} href="/tasks">
+            <Link className={styles.designItemLink} href="/find_task/tasks">
               {topic}
             </Link>
           </li>

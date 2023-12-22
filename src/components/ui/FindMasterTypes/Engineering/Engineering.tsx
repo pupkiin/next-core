@@ -19,7 +19,10 @@ export default function Engineering() {
       <ul className={styles.engineeringList}>
         {ENGINEERING_LIST.map(({ topic }) => (
           <li key={topic} className={styles.engineeringListItem}>
-            <Link className={styles.engineeringItemLink} href="/tasks">
+            <Link
+              className={styles.engineeringItemLink}
+              href="/find_task/tasks"
+            >
               {topic}
             </Link>
           </li>

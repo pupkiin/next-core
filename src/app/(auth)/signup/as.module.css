@@ -1,13 +1,12 @@
 .container {
   padding: 70px 140px;
-  width: 700px;
+  width: 750px;
 }
 
 .asTitle {
   text-align: center;
   margin-bottom: 50px;
   font-size: 28px;
-  /* font-weight: 500; */
 }
 
 .variantsBlock {
@@ -62,7 +61,7 @@
 .haveAccountLink {
   color: var(--blue);
   transition: color 0.1s ease-in-out;
-  /* font-weight: 500; */
+  font-weight: 500;
 }
 
 .haveAccountLink:hover {

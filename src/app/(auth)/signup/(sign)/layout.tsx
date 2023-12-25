@@ -38,7 +38,7 @@ export default function signLayout(
         <div className={styles.checkboxBlock}>
           <input className={styles.checkboxRules} id="check" type="checkbox" />
           <label className={styles.checkboxRulesText} htmlFor="check">
-            Да, я согласен с{" "}
+            Я согласен с{" "}
             <Link className={styles.checkboxLink} href="#">
               Правилами площадки
             </Link>{" "}

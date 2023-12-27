@@ -7,24 +7,22 @@ export default function Login() {
       <h1 className={styles.loginHeader}>Вход в профиль</h1>
       <form className={styles.loginForm} action="">
         <div className={styles.loginInputBlock}>
-          <label className={styles.loginInputLabel} htmlFor="">
-            <input
-              className={styles.loginInput}
-              type="email"
-              name="email"
-              placeholder="Введите вашу почту"
-            />
-          </label>
+          <label className={styles.loginInputLabel} htmlFor="email" />
+          <input
+            className={styles.loginInput}
+            type="email"
+            name="email"
+            placeholder="Введите вашу почту"
+          />
         </div>
         <div className={styles.loginInputBlock}>
-          <label className={styles.loginInputLabel} htmlFor="">
-            <input
-              className={styles.loginInput}
-              type="password"
-              name="password"
-              placeholder="Введите пароль"
-            />
-          </label>
+          <label className={styles.loginInputLabel} htmlFor="password" />
+          <input
+            className={styles.loginInput}
+            type="password"
+            name="password"
+            placeholder="Введите пароль"
+          />
         </div>
         <button className={styles.loginButton}>Войти</button>
         <div className={styles.forgotPasswordBlock}>

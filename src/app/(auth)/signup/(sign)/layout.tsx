@@ -11,15 +11,6 @@ export default function signLayout(
         <div className={styles.signupInputBlock}>
           <input
             className={styles.signupInput}
-            type="text"
-            name="text"
-            placeholder="Придумайте ник"
-          />
-        </div>
-
-        <div className={styles.signupInputBlock}>
-          <input
-            className={styles.signupInput}
             type="email"
             name="email"
             placeholder="Введите вашу почту"

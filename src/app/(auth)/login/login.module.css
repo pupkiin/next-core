@@ -1,5 +1,7 @@
 .container {
-  padding: 50px 70px;
+  padding: 70px 100px;
+  width: 750px;
+  height: 470px;
 }
 
 .loginHeader {
@@ -11,30 +13,36 @@
 
 .loginForm {
   margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .loginInputBlock {
   margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 .loginInputLabel {
   display: flex;
   flex-direction: column;
+  
 }
 
 .loginInput {
   font-size: 15px;
   border-radius: 12px;
-  width: 350px;
+  width: 90%;
   padding: 10px 18px;
 }
 
 .loginButton {
-  width: 100%;
+  width: 90%;
   font-size: 15px;
   font-weight: 500;
   padding: 10px 20px;
-  margin-bottom: 40px;
+  margin: 0 auto;
+  margin-bottom: 20px;
   background-color: var(--blue);
   color: var(--white);
   border-radius: 12px;
@@ -46,6 +54,8 @@
 }
 
 .forgotPasswordBlock {
+  width: 90%;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -70,6 +80,8 @@
 }
 
 .toSignupBlock {
+  width: 90%;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   font-size: 15px;

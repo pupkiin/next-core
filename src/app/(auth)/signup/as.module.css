@@ -1,6 +1,7 @@
 .container {
   padding: 70px 140px;
   width: 750px;
+  height: 470px;
 }
 
 .asTitle {
@@ -13,7 +14,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .asLink {
@@ -21,7 +22,7 @@
   flex-direction: column;
   align-items: center;
   width: 45%;
-  padding: 50px;
+  padding: 60px;
   border-radius: 12px;
   background-color: var(--white);
   color: var(--blue);
@@ -49,7 +50,7 @@
 .haveAccount {
   display: flex;
   justify-content: center;
-  padding-top: 40px;
+  padding-top: 20px;
   border-top: 1px solid var(--grayBorder);
   font-size: 15px;
 }

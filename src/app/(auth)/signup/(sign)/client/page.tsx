@@ -1,4 +1,4 @@
 
 export default function AsClient() {
-  return <h1>Зарегестрироваться как клиент</h1>;
+  return <h1>Зарегестрироваться как Клиент</h1>;
 }

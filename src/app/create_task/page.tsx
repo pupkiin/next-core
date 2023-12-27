@@ -134,9 +134,9 @@ export default function CreateTask() {
             <option value="DEFAULT" disabled>
               Выберите уровень навыков
             </option>
-            <option value="junior">Junior</option>
-            <option value="middle">Middle</option>
-            <option value="senior">Senior</option>
+            <option value="junior">Новичек (Junior)</option>
+            <option value="middle">Средний (Middle)</option>
+            <option value="senior">Эксперт (Senior)</option>
           </select>
         </div>
 

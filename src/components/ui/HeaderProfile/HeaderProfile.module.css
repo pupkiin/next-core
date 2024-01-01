@@ -2,3 +2,44 @@
   width: 45px;
   height: 45px;
 }
+
+.headerProfileBlock {
+  position: relative;
+}
+
+.headerProfileBlock:hover .headerProfileDropdown {
+  display: block;
+}
+
+.headerProfileDropdown {
+  display: none;
+  position: absolute;
+  z-index: 10;
+  padding-top: 20px;
+  left: -105px;
+  /* top: 57px; */
+  width: 150px;
+  /* height: 100%; */
+}
+
+.headerProfileList {
+  background-color: var(--white);
+  box-shadow: var(--shadow-3);
+  border: 1px solid var(--grayBorder);
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.headerProfileItem {
+  font-size: 14px;
+  font-weight: 500;
+  transition: color .1s ease-in-out;
+}
+
+.headerProfileItem:hover {
+  color: var(--blue);
+}
+
+.headerProfileItem:not(:last-child) {
+  margin-bottom: 15px;
+}

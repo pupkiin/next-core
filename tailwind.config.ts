@@ -91,6 +91,7 @@ const config: Config = {
       borderRadius: {
         "12px": "12px",
         "24px": "24px",
+        "50%": "50%",
       },
     },
   },

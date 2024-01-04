@@ -2,18 +2,22 @@
 import Link from "next/link";
 import styles from "./HeaderProfile.module.css";
 import Image from "next/image";
-import axios from "axios";
-import authStore from "@/store/auth";
+import { apiPostAuthSignOut } from "@/api/api-functions";
+import { useMutation } from "@tanstack/react-query";
+import { ROUTES } from "@/shared/constants/routes";
 
 export default function HeaderProfile() {
-  // удалить куки и в стор записать false
+
+  const signOutMutation = useMutation({
+    mutationFn: apiPostAuthSignOut,
+    onSuccess() {
+      // без роутера, чтобы хедер обновился
+      location.replace(ROUTES.HOME);
+    },
+  });
+
   function handleQuit() {
-    axios.post("/auth/sign-out").then((res) => {
-      authStore.remAuth();
-      console.log(authStore.authorized);
-    }).catch((err) => {
-      console.log(err);
-    });
+    signOutMutation.mutate();
   }
 
   return (
@@ -38,9 +42,9 @@ export default function HeaderProfile() {
             <Link href="#">Настройки</Link>
           </li>
           <li className={styles.headerProfileItem}>
-            <Link href="/" onClick={handleQuit}>
+            <button onClick={handleQuit}>
               Выйти
-            </Link>
+            </button>
           </li>
         </ul>
       </div>

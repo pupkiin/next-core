@@ -1,7 +1,8 @@
-import type { Metadata } from 'next'
+import type { Metadata } from "next";
 // import "./normalize.css";
-import './globals.css'
+import "./globals.css";
 import "./normalize.css";
+import Providers from "./providers";
 
 // const font = Roboto({
 //   weight: ["100", "300", "400", "500", "700", "900"],
@@ -16,11 +17,13 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <Providers>{children}</Providers>
+      </body>
     </html>
   );
 }

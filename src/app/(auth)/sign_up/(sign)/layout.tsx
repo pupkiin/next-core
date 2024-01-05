@@ -88,7 +88,7 @@ export default function SignLayout({
       </form>
       <div className={styles.haveAccount}>
         <span className={styles.haveAccountText}>Уже есть аккаунт?</span>
-        <Link className={styles.haveAccountLink} href={ROUTES.LOGIN}>
+        <Link className={styles.haveAccountLink} href={ROUTES.SIGN_IN}>
           Войти
         </Link>
       </div>

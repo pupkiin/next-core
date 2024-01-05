@@ -1,12 +1,13 @@
 import Link from 'next/link';
 import styles from './as.module.css'
+import { ROUTES } from '@/shared/constants/routes';
 
 export default function As() {
   return (
     <main className={styles.container}>
       <h1 className={styles.asTitle}>Зарегестрироваться как</h1>
       <div className={styles.variantsBlock}>
-        <Link className={styles.asLink} href="/signup/client">
+        <Link className={styles.asLink} href={ROUTES.SIGN_UP_CLIENT}>
           <h2 className={styles.linkTitle}>Клиент</h2>
           <div className={styles.linkImages}>
             <svg
@@ -19,7 +20,7 @@ export default function As() {
             </svg>
           </div>
         </Link>
-        <Link className={styles.asLink} href="/signup/master">
+        <Link className={styles.asLink} href={ROUTES.SIGN_UP_MASTER}>
           <h2 className={styles.linkTitle}>Мастер</h2>
           <div className={styles.linkImages}>
             <svg
@@ -37,7 +38,7 @@ export default function As() {
 
       <div className={styles.haveAccount}>
         <span className={styles.haveAccountText}>Уже есть аккаунт?</span>
-        <Link className={styles.haveAccountLink} href="/login">
+        <Link className={styles.haveAccountLink} href={ROUTES.SIGN_IN}>
           Войти
         </Link>
       </div>

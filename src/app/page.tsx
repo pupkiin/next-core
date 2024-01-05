@@ -2,6 +2,7 @@
 import { apiGetAuthSession } from "@/api/api-functions";
 import Header from "@/components/ui/Header/Header";
 import Loading from "@/components/ui/loading";
+import { ROUTES } from "@/shared/constants/routes";
 import { useQuery } from "@tanstack/react-query";
 import Link from "next/link";
 import { useEffect } from "react";
@@ -12,10 +13,6 @@ export default function Home() {
     queryFn: () => apiGetAuthSession(),
     retry: false,
   });
-
-  // useEffect(() => {
-  //   location.reload();
-  // }, [data]);
 
   if (isLoading) {
     return <main></main>;
@@ -30,14 +27,14 @@ export default function Home() {
         <Link href="/tasks">Tasks</Link>
         <br />
         <br />
-        <Link href="/profile">Profile</Link>
+        <Link href={ROUTES.PROFILE}>Profile</Link>
         <br />
         <br />
-        <Link href="/login">Login</Link>
+        <Link href={ROUTES.SIGN_IN}>Sign In</Link>
 
         <br />
         <br />
-        <Link href="/signup">Sign Up</Link>
+        <Link href={ROUTES.SIGN_UP}>Sign Up</Link>
       </main>
       {/* <Footer /> */}
     </>

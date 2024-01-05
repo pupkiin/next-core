@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import Link from "next/link";
 import styles from "./HeaderProfile.module.css";
 import Image from "next/image";
@@ -7,7 +7,6 @@ import { useMutation } from "@tanstack/react-query";
 import { ROUTES } from "@/shared/constants/routes";
 
 export default function HeaderProfile() {
-
   const signOutMutation = useMutation({
     mutationFn: apiPostAuthSignOut,
     onSuccess() {
@@ -42,9 +41,7 @@ export default function HeaderProfile() {
             <Link href="#">Настройки</Link>
           </li>
           <li className={styles.headerProfileItem}>
-            <button onClick={handleQuit}>
-              Выйти
-            </button>
+            <button onClick={handleQuit}>Выйти</button>
           </li>
         </ul>
       </div>

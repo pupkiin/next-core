@@ -1,4 +1,3 @@
-import authStore from "@/store/auth";
 import axios from "axios";
 
 export async function apiPostAuthSignUp(data: {
@@ -17,9 +16,22 @@ export async function apiPostAuthSignUp(data: {
     });
 }
 
+export async function apiPostAuthSignIn(data: {
+  email: string;
+  password: string;
+}) {
+  await axios
+    .post("/auth/sign-in", {
+      email: data.email,
+      password: data.password,
+    })
+    .then((res) => {
+      console.log("authtorized");
+    });
+}
+
 export async function apiGetAuthSession() {
   const data = await axios.get("/auth/session");
-
   return data;
 }
 

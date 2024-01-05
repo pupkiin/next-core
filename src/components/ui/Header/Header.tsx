@@ -2,11 +2,11 @@
 import HeaderBalance from "../HeaderBalance/HeaderBalance";
 import HeaderCreateTask from "../HeaderCreateTask/HeaderCreateTask";
 import HeaderFindTask from "../HeaderFindTask/HeaderFindTask";
-import HeaderLogin from "../HeaderLogin/HeaderLogin";
+import HeaderSignIn from "../HeaderSignIn/HeaderSignIn";
 import HeaderLogo from "../HeaderLogo/HeaderLogo";
 import HeaderProfile from "../HeaderProfile/HeaderProfile";
-import HeaderSignup from "../HeaderSignup/HeaderSignup";
 import styles from "./Header.module.css";
+import HeaderSignUp from "../HeaderSignUp/HeaderSignUp";
 
 export interface IResponse<T = any> {
   data: T;
@@ -26,8 +26,8 @@ export default function Header({ data }: IResponse) {
           </li>
         ) : (
           <li className={styles.headerAuthorizationButtons}>
-            <HeaderLogin />
-            <HeaderSignup />
+            <HeaderSignIn />
+            <HeaderSignUp />
           </li>
         )}
       </ul>

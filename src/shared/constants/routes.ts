@@ -5,5 +5,6 @@ export const ROUTES = {
   SIGN_UP_MASTER: "/sign_up/master",
   SIGN_IN: "/sign_in",
   PROFILE: "/profile",
+  SETTINGS: "/settings",
   // todo : доделать это!
 };

@@ -16,7 +16,6 @@ export default function Home() {
 
   if (isLoading) {
     return <main></main>;
-    // return <Loading />;
   }
 
   return (
@@ -35,6 +34,10 @@ export default function Home() {
         <br />
         <br />
         <Link href={ROUTES.SIGN_UP}>Sign Up</Link>
+
+        <br />
+        <br />
+        <Link href={ROUTES.SETTINGS}>Settings</Link>
       </main>
       {/* <Footer /> */}
     </>

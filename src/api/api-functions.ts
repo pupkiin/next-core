@@ -12,7 +12,7 @@ export async function apiPostAuthSignUp(data: {
       role: data.role,
     })
     .then((res) => {
-      console.log("authtorized");
+      console.log("sign up");
     });
 }
 
@@ -26,7 +26,7 @@ export async function apiPostAuthSignIn(data: {
       password: data.password,
     })
     .then((res) => {
-      console.log("authtorized");
+      console.log("sign in");
     });
 }
 
@@ -38,5 +38,11 @@ export async function apiGetAuthSession() {
 export async function apiPostAuthSignOut() {
   axios.post("/auth/sign-out").then((res) => {
     console.log("unauthtorized");
+  });
+}
+
+export async function apiDeleteAccount() {
+  axios.delete("/account").then((res) => {
+    console.log("account deleted");
   });
 }

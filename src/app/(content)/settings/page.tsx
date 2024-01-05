@@ -33,7 +33,7 @@ export default function Settings() {
       <main className="p-20 max-w-1440px mr-auto ml-auto">
         <h2 className="mb-10">Настройки</h2>
         <button
-          className="px-20px py-10px text-white bg-blue hover:bg-blue-lighter transition ease-in-out duration-100 rounded-12px"
+          className="px-20px py-10px font-medium text-white bg-blue hover:bg-blue-lighter transition ease-in-out duration-100 rounded-12px"
           onClick={handleQuit}
         >
           Удалить аккаунт
@@ -41,8 +41,4 @@ export default function Settings() {
       </main>
     );
   } 
-
-  // if (authStore.authorized === false) {
-  //   router.push(ROUTES.HOME);
-  // }
 }

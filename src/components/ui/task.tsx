@@ -48,7 +48,7 @@ export default function Task() {
           
         </p>
 
-        <div className="text-15px flex pt-10 border-t border-grayBorder justify-between items-center">
+        <div className="text-14px flex pt-10 border-t border-grayBorder justify-between items-center">
           <div className="flex">
             <div className="flex items-center mr-8 py-7px px-14px rounded-12px bg-navy-blue-lightest text-navy-blue-darker">
               <svg

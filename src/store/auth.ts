@@ -1,7 +1,6 @@
-import { apiGetAuthSession } from "@/api/api-functions";
-import { action, makeAutoObservable, makeObservable, observable } from "mobx";
+import { makeAutoObservable } from "mobx";
 
-
+// используется для проверки доступа страниц, когда пользователь не авторизован в системе
 class AuthStore {
   authorized: Boolean = false; // изначально не авторизован
 

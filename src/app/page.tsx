@@ -3,6 +3,7 @@ import { apiGetAuthSession } from "@/api/api-functions";
 import Header from "@/components/ui/Header/Header";
 import Loading from "@/components/ui/loading";
 import { ROUTES } from "@/shared/constants/routes";
+import authStore from "@/store/auth";
 import { useQuery } from "@tanstack/react-query";
 import Link from "next/link";
 import { useEffect } from "react";
@@ -16,6 +17,12 @@ export default function Home() {
 
   if (isLoading) {
     return <main></main>;
+  }
+
+  if (data) {
+    authStore.setAuth();
+  } else {
+    authStore.remAuth();
   }
 
   return (

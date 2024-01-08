@@ -6,7 +6,6 @@ import { ROUTES } from "@/shared/constants/routes";
 import authStore from "@/store/auth";
 import { useQuery } from "@tanstack/react-query";
 import Link from "next/link";
-import { useEffect } from "react";
 
 export default function Home() {
   const { data, isLoading } = useQuery({
@@ -16,7 +15,7 @@ export default function Home() {
   });
 
   if (isLoading) {
-    return <main></main>;
+    return <Loading />;
   }
 
   if (data) {

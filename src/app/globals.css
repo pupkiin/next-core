@@ -130,7 +130,7 @@ a {
 
 button {
   padding: 0;
-  border: none;
+  /* border: none; */
   background: transparent;
   cursor: pointer;
   font-size: inherit;
@@ -138,23 +138,23 @@ button {
 
 /* посмотреть как работает фокус в других браузерах */
 button:focus-visible {
-  outline: 3px solid var(--blue-lightest);
+  outline: 2px solid var(--blue-lightest);
 }
 
 input:focus-visible {
-  outline: 3px solid var(--blue-lightest);
+  outline: 2px solid var(--blue-lightest);
 }
 
 textarea:focus-visible {
-  outline: 3px solid var(--blue-lightest);
+  outline: 2px solid var(--blue-lightest);
 }
 
 select:focus-visible {
-  outline: 3px solid var(--blue-lightest);
+  outline: 2px solid var(--blue-lightest);
 }
 
 a:focus-visible {
-  outline: 3px solid var(--blue-lightest);
+  outline: 2px solid var(--blue-lightest);
   border-radius: 6px;
 }
 

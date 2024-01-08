@@ -1,5 +1,7 @@
 "use client";
 import { apiDeleteAccount } from "@/api/api-functions";
+import { UiButton } from "@/components/ui/button";
+import { UiTextField } from "@/components/ui/text-field";
 import { ROUTES } from "@/shared/constants/routes";
 import authStore from "@/store/auth";
 import { useMutation } from "@tanstack/react-query";
@@ -32,12 +34,41 @@ export default function Settings() {
     return (
       <main className="p-20 max-w-1440px mr-auto ml-auto">
         <h2 className="mb-10">Настройки</h2>
-        <button
+
+        <UiButton variant="primary" className="mr-20">
+          Изменить
+        </UiButton>
+        <UiButton variant="secondary" className="mr-20">
+          Clickuuuuu
+        </UiButton>
+        <UiButton variant="additional" className="mr-20">
+          Clickkkkkkk
+        </UiButton>
+        <UiButton disabled variant="primary">
+          Настройки
+        </UiButton>
+
+        <UiTextField
+          label="Text field"
+          inputProps={{ placeholder: "введите имя" }}
+          className="mb-20px w-80"
+        />
+        <UiTextField
+          error="Text field"
+          inputProps={{ placeholder: "введите имя" }}
+          className="mb-20px w-80"
+        />
+
+        {/* <button
           className="px-20px py-10px font-medium text-white bg-blue hover:bg-blue-lighter transition ease-in-out duration-100 rounded-12px"
           onClick={handleQuit}
         >
           Удалить аккаунт
-        </button>
+        </button> */}
+
+        <UiButton variant="secondary" onClick={handleQuit}>
+          Удалить аккаунт
+        </UiButton>
       </main>
     );
   } 

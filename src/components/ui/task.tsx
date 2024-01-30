@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Task() {
   return (
     <main className="p-20 max-w-1440px mr-auto ml-auto">
-      <div className="p-10 border border-grayBorder rounded-24px">
+      <div className="p-10 rounded-24px shadow-shadow-2">
         <h1 className="mb-6 text-26px font-medium">
           AI Chat GPT Web Application
         </h1>
@@ -38,14 +38,12 @@ export default function Task() {
           Replaceable Car: I want the ability to replace the car with any other
           the animation required:
           https://sketchfab.com/3d-models/f1-pit-stop-3de40c9f13a1438bb29382c378c49635
-          The quality of work should be close to the reference or better.
-          A
-          the animation required:
+          The quality of work should be close to the reference or better. A the
+          animation required:
           https://sketchfab.com/3d-models/f1-pit-stop-3de40c9f13a1438bb29382c378c49635
           The quality of work should be close to the reference or better.
           Animation should look like this including the pit area. The Animation
           should be dynamically adaptable to the following requirements. 1.
-          
         </p>
 
         <div className="text-14px flex pt-10 border-t border-grayBorder justify-between items-center">

@@ -42,7 +42,7 @@ export default function Settings() {
           Clickuuuuu
         </UiButton>
         <UiButton variant="additional" className="mr-20">
-          Clickkkkkkk
+          Применить
         </UiButton>
         <UiButton disabled variant="primary">
           Настройки
